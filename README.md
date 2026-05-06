@@ -1,22 +1,5 @@
 # NIPSCODETREAT
 
-This folder contains a cleaned algorithm-only code snapshot for the NeurIPS paper.
-
-Included:
-- `newtry_llm_orbit/`: Adaptive Semantic ORBIT wrapper, semantic prior engine, cached semantic record schemas, and heuristic/local LLM backends.
-- `orbit_adapter/adapters/`: ORBIT adapters, including `SafeTemporalRoleAdapter`, safe temporal routing variants, rule filters, and baseline adapters used by the algorithm.
-- `orbit_adapter/models/`: feature encoder, temporal eligibility gate, safe role router, subspace aggregation, role adapters, and outcome heads.
-- `orbit_adapter/objectives/`: balance, orthogonality, bridge, disentanglement, audit, and gate-ranking losses.
-- `orbit_adapter/training/`: core training loops and cross-fitting utilities.
-- `orbit_adapter/downstream/`: downstream estimator wrappers used to consume ORBIT representations.
-- `orbit_adapter/data/schemas.py`: feature metadata and dataset schema types required by the algorithm.
-- `orbit_adapter/evaluation/`: algorithm diagnostics and routing/gate metrics.
-
-Excluded:
-- Experiment runners, paper table/figure scripts, generated results, logs, caches, PDFs, and review/audit writeups.
-- Dataset-specific raw/cohort builders and result folders.
-- Test and ablation-output folders.
-
 Main entry points:
 - `newtry_llm_orbit.adapter.ASOrbitAdapter`
 - `newtry_llm_orbit.adapter.ASOrbitConfig`
